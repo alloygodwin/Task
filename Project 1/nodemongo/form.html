@@ -1,0 +1,35 @@
+<html>
+<head>
+  <script src="jquery.js">
+  </script>
+  <script>
+    $(document).ready(function() {
+      var user, pass;
+      $("#submit").click(function() {
+        user = $("#user").val();
+        pass = $("#pass").val();
+        $.post("http://localhost:3000/hold", {
+          user: user,
+          password: pass
+        }, function(data) {
+          if (data === 'Success') {
+            alert("Successfully Stored in Database");
+          }
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h3>MongoDB Insertion</h3>
+  <form>
+  <table>
+  <tr><td>Username:</td><td><input type="text" id="user" placeholder="Enter your name" required></td></tr><br>
+  <tr><td>Password:</td><td><input type="password" id="pass" placeholder="Enter your password" required></td></tr><br>
+  </table>
+  <input type="button" id="submit" value="submit">
+</form>
+</body>
+
+</html>

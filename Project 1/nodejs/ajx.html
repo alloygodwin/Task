@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<h1 id="demo"></h1>
+<button type="button" onclick="ajx()">Call ajax</button>
+
+
+<script>
+function ajx()
+{
+   xmlhttp = new XMLHttpRequest();
+   xmlhttp.open("GET","http://localhost:3000/getname", true);
+   xmlhttp.onreadystatechange=function(){
+         if (xmlhttp.readyState==4 && xmlhttp.status==200){
+           alert(xmlhttp.responseText);
+           document.getElementById("demo").innerHTML = xmlhttp.responseText;
+		   
+         }
+   }
+   xmlhttp.send();
+}
+</script>
+
+</body>
+</html>
