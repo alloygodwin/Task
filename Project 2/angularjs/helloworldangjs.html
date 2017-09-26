@@ -1,0 +1,16 @@
+<html ng-app="appname">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="hello.js"></script>
+</head>
+<body>
+    <div ng-controller="appCtrl">
+      <p>{{greeting.text}} World </p>
+    </div>
+<div ng-app="">
+<p>Input Contents in the textbox</p>
+<p>Name : <input type="text" ng-model="name" placeholder="Enter Here"></p>
+<h1>Hello {{name}}</h1>
+</div>
+</body>
+</html>
