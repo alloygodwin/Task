@@ -1,0 +1,1 @@
+require.extensions['.sjs'] = require.extensions['.js'];
