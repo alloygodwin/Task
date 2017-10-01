@@ -1,0 +1,33 @@
+<h3>Insert data</h3>
+<form action="http://localhost:4000/insertdata" method="get">
+<table>
+ <tr><td><input type="text" name="name" placeholder="Enter the name" /></td></tr><br>
+ <tr><td><input type="number" name="rollno" placeholder="Enter the roll number" /></td></tr><br>
+ </table>
+  <input type="submit" value="Insert" />
+</form>
+</table>
+<h3>Retrive</h3>
+<form action="http://localhost:8000/retrive" method="get">
+  <input type="text" name="name" placeholder="Enter the name" /><br>
+  <input type="submit" value="Retrive" />
+</form>
+<h3>Update data</h3>
+<form action="http://localhost:8000/updatedata" method="get">
+<table>
+ <tr><td><input type="text" name="oldname" placeholder="Enter the old name" /><br></td></tr>
+ <tr><td><input type="text" name="newname" placeholder="Enter the new name" /><br></td></tr>
+ <tr><td><input type="number" name="rollno" placeholder="Enter the roll number" /><br></td></tr>
+  </table>
+  <input type="submit" value="Update" />
+</form>
+<h3>Delete Data</h3>
+<form action="http://localhost:8000/deletedata" method="get">
+  <input type="text" name="name" placeholder="Enter the name" /><br>
+  <input type="submit" value="Delete" />
+</form>
+<br>
+<h3>Display All</h3>
+<form action="http://localhost:8000/display">
+  <input type="submit" value="Display All" />
+</form>

@@ -25,8 +25,6 @@ app.get('/', function(request, res) {
     });
   });
   res.end("Successfully inserted into db");
-
 });
-
 app.listen(1000);
 console.log("Success 1000 port");
