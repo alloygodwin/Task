@@ -12,8 +12,8 @@ app.get('/', function(req, res) {
 });
 
 app.post('/hold', function(req, res) {
-  var user = req.body.user; //getting name from ajax post
-  var pass = req.body.password; //getting password from ajax password
+  var user = req.body.user;         //getting name from link above
+  var pass = req.body.password;     //getting password from link above
   console.log("Username :" + user + " \n password :" + pass);
   var MongoClient = require('mongodb').MongoClient;
   var url = "mongodb://localhost:27017/users";
